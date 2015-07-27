@@ -1,0 +1,205 @@
+/* Bill's Stage 1 CSS file */
+  body {
+    font-size: 100%;
+    font-family:  sans-serif;
+    color: rgba(0,0,0,1);
+    max-width: 1060px;
+    background-color: rgba(255,255,255,1);
+    margin: 0px auto;
+  }
+  /* 
+  div {
+    border: 5px solid black;
+    padding: 20px; 
+    background-color: rgba(128, 128, 128, 0.2);
+  }
+  */
+  .main_menu {
+    background-color: #294860;
+    border-radius: 20px;
+    color: white;
+    padding: 10px;
+    max-width: 1020px;
+  } 
+  .menu_panel {
+    /* background-image: url("http://learn-2-code.appspot.com/images/ipnd.png");  */
+    background-size: cover;
+    background-position: center;
+    /* height: 290px; */
+    text-align: center;
+    /* margin-left:  auto; */
+    margin-right: auto;
+    padding: 5px;
+    max-width: 320px;
+    width: 100%;
+    min-height: 60px;
+    /* min-height: 40px; */
+  }
+  .menu_content {
+    background-color: #DFEAF1;   
+    padding: 10px;
+    margin: 5px;
+    text-align: center; 
+    border-radius: 4px;
+    color: black;
+    }
+  .panel {
+    /* background-image: url("http://learn-2-code.appspot.com/images/ipnd.png");  */
+    background-size: cover;
+    background-position: center;
+    /* height: 290px; */
+    text-align: center;
+    margin : 5px auto;
+    max-width: 480px;
+    width: 100%;
+  }
+  .standard_content {
+    background-color: #DFEAF1;   
+    padding: 20px;
+    margin: 10px;
+    text-align: justify; 
+    border-radius: 4px;
+    color: black;
+    }
+  .standard_content_title {
+    text-align: center;
+  }
+  .main_title {
+    font-size: 1.1em;
+    text-align: center;  
+    padding: 5px;
+  }
+  .main_page {
+    background-color: #e0e0e0;
+    border-radius: 0px;
+    color: black;
+    padding: 10px;
+  /*  moved to body section 
+      margin : 5px auto;  
+      margin-left: auto;
+      margin-right: auto; 
+  */ 
+  
+  }
+.main_lesson {
+    background-color: #294860;
+    border-radius: 20px;
+    color: white;
+    padding: 10px;
+    max-width: 1020px;
+  }
+.main_toc {
+    background-color: #B6C2CF;
+    border-radius: 20px;
+    color: #294860;
+    padding: 10px;
+    max-width: 1020px;
+    margin-top: 10px;
+  }
+.row {
+  width : 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.centered_row {
+  width : 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto; 
+}
+.centered_text {
+  text-align: center;
+}
+.indented_text {
+  margin-left: 5px;
+}
+.small_text {
+    font-size: .875em;
+  }
+.small_link {
+  font-size: .75em;
+}
+/*
+   The next few elements are used to highlight any sample code used in the 
+   notes.  Credit to Andy's Reflection for Stage 2, Work Session 3 for the 
+   idea.
+*/
+span.code {
+    font-family: Courier;
+    background-color: #BBBBBB;
+    padding: 2px 4px;
+    font-weight: bold;
+}
+
+div.code-block {
+    font-family: Courier;
+    background-color: #BBBBBB;
+    padding: 2px 4px;
+    font-weight: bold;
+    display: inline-block;
+}
+span.indent {
+    margin-left: 38px;
+}
+span.indent2 {
+    margin-left: 76px;
+}
+  /* These @media sections are what helps the page look good on smaller screens.  
+     For screens less than 1020 pixels wide the .main_lesson max width is decreased
+     to keep the content centered and the right proportion compared to the panels. 
+     The .main_title font size is also decreased.
+
+     For screens less than 480 pixels wide the .main_title and .standard_content_title
+     font sizes are decreased. */
+
+  @media screen and (max-width:1040px) {
+  .main_lesson {
+    max-width: 510px; 
+  }
+   .main_toc {
+    max-width: 510px; 
+  }
+  .main_title {
+    font-size: .9em;
+  }
+  .main_menu {
+    max-width: 510px; 
+  }
+  .menu_panel {
+    max-width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }  
+}
+@media screen and (max-width:480px) {
+  .main_title {
+    font-size: .7em;
+  }
+  .standard_content_title {
+    font-size: 1.2em;
+  }
+}
+    h1 {
+
+    font-size: 1.75em;
+    font-family: sans-serif;
+  }
+    h2 {
+    font-size: 1.5em;
+  }
+    p {
+    font-size: .875em;
+  }
+  * {  
+  -webkit-box-sizing: border-box;
+  -mos-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+   }
+ 
+  /*
+  div {
+     outline: 1px solid red !important;      
+  } */
+  

@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Stage 2 v1.0</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="main_page"> <!-- this is the main box for the page -->
+<!--
+    Page Header
+-->
+        <div class="main_title">
+            <h2 id="top_of_page">Introduction to Programming Notes</h2>
+        </div>
+<!--
+    Navigation Menu
+-->        
+        <div class="main_menu centered_row"> <!-- Menu Container -->
+            <div class="menu_content menu_panel">  <!-- Menu Item -->
+                <a href="#lesson1-1">1.1: The basics of Web and HTML</a>
+            </div>  <!-- end of menu item -->
+            <div class="menu_content menu_panel">  <!-- Menu Item -->
+                <a href="#lesson1-2">1.2: Creating a Structured Document with HTML</a>
+            </div>  <!-- end of menu item -->
+            <div class="menu_content menu_panel">  <!-- Menu Item -->
+                <a href="#lesson1-3">1.3: Adding CSS Style and HTML Structure</a>
+            </div>  <!-- end of menu item -->
+            <div class="menu_content menu_panel">  <!-- Menu Item -->
+                <a href="#lesson2-1">2.1: Introduction to Serious Programming</a>
+            </div>  <!-- end of menu item -->
+            <div class="menu_content menu_panel">  <!-- Menu Item -->
+                <a href="#lesson2-2">2.2: Variables and Strings</a>
+            </div>  <!-- end of menu item -->
+            <div class="menu_content menu_panel">  <!-- Menu Item -->
+                <a href="#lesson2-3">2.3: Functions</a>
+            </div>  <!-- end of menu item -->
+            <div class="menu_content menu_panel">  <!-- Menu Item -->
+                <a href="#lesson2-4">2.4: Control Flow &amp; Loops</a>
+            </div>  <!-- end of menu item -->
+            <div class="menu_content menu_panel">  <!-- Menu Item -->
+                <a href="#lesson2-5">2.5: Debugging</a>
+            </div>  <!-- end of menu item -->
+            <div class="menu_content menu_panel">  <!-- Menu Item -->
+                <a href="#lesson2-6">2.6: Structured Data</a>
+            </div>  <!-- end of menu item -->
+            <div class="menu_content menu_panel">  <!-- Menu Item -->
+                <a href="#lesson2-7">2.7: Problem Solving</a>
+            </div>  <!-- end of menu item -->
+        </div> <!-- End of Menu Container -->
+<!--
+    Notes from Lesson 1.1 
+-->
+        <div class="main_title">
+            <h2 id="lesson1-1">1.1 The basics of Web and HTML</h2>
+        </div>
+        <div class="main_lesson centered_row"> <!-- Lesson 1.1 -->
+            <div class="standard_content panel">
+                <h2 class="standard_content_title">Web Structure</h2>
+                <p>
+                    The basic high level elements of "The Web" are user's computers running browsers, the Internet, and Servers.
+                </p>
+            </div>
+            <div class="standard_content panel">
+                <h2 class="standard_content_title">HTML</h2>
+                <p>
+                    HTML stands for <em>HyperText Markup Language</em>. HTML documents make up the 
+                    majority of the content on the web. HTML documents contain <em>text content</em> 
+                    which describes "what you see" and <em>markup</em> which describes "how it looks".
+                </p>
+            </div>
+            <div class="standard_content panel">
+                <h2 class="standard_content_title">Tags and Elements</h2>
+                <p>
+                    HTML documents are comprised of <em>HTML Elements</em>. HTML Elements are defined using HTML Tags. Tags typically have begin and end components, with <em>void</em> type tags being an exception only having a single component. An example of a void tag is the "br" tag.
+                </p>
+                <p>
+                    Some tags have content, some have content and attributes. Some tags are <em>inline</em>, menaing they work 'inline' with other HTML elements. Some tags are <em>block</em> - which for now means they create an invisible block in the HTML document that can have attributes which we'll learn about later.
+                </p>
+            </div>
+            <div class="standard_content panel">
+                <h2 class="standard_content_title">Stupid Computers!!</h2>
+                <p>Computers only do what we tell them to do (at least for now)...</p>
+            </div>
+        </div> <!-- end of lesson 1.1 -->
+<!--
+    Notes from Lesson 1.2 are next.
+-->
+        <div class="main_title">
+            <h2 id="lesson1-2">1.2 - Creating a Structured Document with HTML</h2>
+        </div>
+        <div class="main_lesson centered_row">  <!-- Lesson 1.2 -->       
+            <div class="standard_content panel">
+                <!-- Stage 1 Objectives -->
+                <h2 class="standard_content_title">Stage 1 Objectives</h2>
+                <ul>
+                    <li>See HTML as a web page</li>
+                    <li>See a web page as HTML</li>
+                    <li>Avoid Repitition with CSS</li>
+                </ul>
+            </div>
+            <div class="standard_content panel">
+                <h2 class="standard_content_title">1.2 Creating a Structured Document</h2>
+                <p>The Browser builds a tree like structure of each page - ‘sideways triangles’ are HTML elements… opening tag, closing tag (view in Chrome developer tools)</p>
+                <p>This <a href="https://www.youtube.com/watch?v=_e-gGAM4noQ">video</a> provides a brief example of how to use Chrome's Developer Tools.</p>
+            </div>
+            <div class="standard_content panel">
+                <h2 class="standard_content_title">HTML, CSS &amp; JavaScript*</h2>
+                <ul>
+                    <li>HTML and CSS are both languages
+                        <ul>
+                            <li>languages have syntax and rules</li>
+                        </ul>
+                    </li>
+                    <li>HTML controls the "tree-like" structure of a web page
+                        <ul>
+                            <li>Tags define elements in the tree (Document Object Model or DOM)</li>
+                            <li>Web pages are essentially comprised of Boxes - a lot of boxes!</li>
+                            <li>All HTML structures are rectangles</li>
+                        </ul>
+                    </li>
+                    <li>How to "Boxify" a web page design
+                        <ul>
+                            <li>Work from big boxes to smaller boxes</li>
+                            <li>Smaller boxes may be contained within larger ones</li>
+                            <li>Use "div" tags to define boxes</li>
+                            <li>Use class attributes to define how the boxes look</li>
+                        </ul>
+                    </li>
+                    <li>Cascading Style Sheets or CSS controls the style of a web page (i.e. how a web page looks).
+                </ul>
+                <p>* This course will not cover JavaScript - mentioned only for awareness</p>
+            </div>
+        </div>
+<!--
+    Notes from Lesson 1.3 are next.
+-->
+        <div class="main_title">  
+            <h2 id="lesson1-3">1.3 Adding CSS Style and HTML Structure</h2>
+        </div>
+       <div class="main_lesson centered_row">  <!-- Section 1.3 -->       
+            <div class="standard_content panel">
+                <!-- 1.3 notes -->
+                <h2 class="standard_content_title">1.3 Adding CSS Style and HTML Structure</h2>
+                <p>CSS stands for "Cascading Style Sheet". Styles are inherited by elements with the style applied by the browser being the most specific style determined for a particular element</p>
+                <p>This <a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets#Inheritance" target="_blank">link</a> references a great Wikipedia page on CSS Inheritance.</p>
+                <p>This <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">link</a> points to a great general CSS Reference page.</p>
+            </div>
+            <div class="standard_content panel">
+                <h2 class="standard_content_title">Divs, Spans, Classes &amp; Ids...</h2>
+                <p><b>Divs</b> are mainly used to group items together to: 1) Logically organize our code, and 2) Group our items together so we can add styling to the whole block of code all at once. This avoids repetition because we don't have to single handedly assign the same styles to all of our elements inside our div block.
+                </p>
+                <p>Since <b>spans</b> are inline-level elements, they are usually not used to group items together and are used to style parts of text or a few elements together without affecting the layout of the page.
+                </p>
+                <p>
+                    <b>Ids</b> are used to uniquely identify an element in the entire web page. That means div id="welcome" should be the only element with the unique identifier: "welcome". There should not be any other element with the name "welcome".
+                </p>
+                <p>
+                    We should use id for special cases to give us the ability to uniquely identify elements and should be used sparingly because having a lot of id's in a website will slow our browser down.
+                </p>
+                <p>
+                    Classes are used to style a group or groups of elements similarly.  Using classes enables the programmer to avoid repetition by grouping like elements and using a single CSS entry to define the style for those elements.
+                </p>
+            </div>
+            <div class="standard_content panel">
+                <h2 class="standard_content_title">A Note about Repetition</h2>
+                <p>The previous paragraph mentioned the use of classes as a way to avoid repetition in code (and a way to help ensure consistency in how the web page will look). <b>Don't Repeat Yourself!! or "DRY"...</b> Perhaps one of the most important principles of good coding.  When you repeat yourself not only do you create more work for you, you increase the chances of introducing errors in your code and you make it that much harder for others to maintain, modify and debug your code.
+                </p>
+                <p>This <a href="http://area.autodesk.com/blogs/chris/the_principle_of_good_programming" target="_blank">link</a> points to a great article on "The Principles of Good Programming" which discusses repetition and other good coding practices.
+                </p>
+            </div>           
+             <div class="standard_content panel">
+                <h2 class="standard_content_title">HTML and CSS Errors</h2>
+                <p>HTML and CSS are both programming languages with their own syntax and rules. Syntax and rules help ensure the language can coded, processed and understood consistently from person to person, browser to browser, etc...  It is important to check your code for syntax errors to ensure the code will work as expected (even though some browsers may still execute semantically incorrect code).  I've included links to HTML and CSS validation tools below in the "tools" section.   Also be sure to use the Chrome Developer Tools to help debug and validate your code.
+                </p>
+            </div>            
+            <div class="standard_content panel">
+                <h2 class="standard_content_title">Summary</h2>
+                <p>
+                    HTML is simply made up of a series of rectangles we put on a page. We use certain elements to layout our rectangles in either block-level or inline-level to control the flow of our pages.
+                </p>
+                <p>
+                    Divs are block-level and spans are inline-level and are used differently. Divs are used more for grouping items together and creating a layout structure and spans are used to style text and individual elements.
+                </p>
+                <p>
+                    Ids should be used sparingly and are used to uniquely identify an element. Class is recommended over id to style similar elements together.
+                </p>
+                <p>
+                    Using Divs, Spans, IDs and Classes helps provide strucuture to HTML code.  Good code structure facilitates readability, understanding and maintainability.
+                </p>
+            </div>
+            <div class="standard_content panel">
+                <h2 class="standard_content_title">References</h2>
+                <p>Useful links to various reference sources.
+                </p>
+                <ul>
+                    <li>
+                        <a href="http://www.w3.org/TR/CSS21/sample.html" target="_blank">Default Style Sheet for HTML4</a>
+                    </li>
+                    <li>
+                        <a href="https://www.udacity.com/course/viewer/#!/c-nd000/l-4131369051/m-3628708672" target="_blank">"Structured" lesson in 1.3.</a>
+                    </li>
+                    <li>
+                        <a href="http://assignments.udacity-extras.appspot.com/courses/html-css/samples/style-1.html" target="_blank">Styles sample app</a>
+                    </li>
+                    <li>
+                        <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">Guide to "flexbox"</a>
+                    </li>
+                    <li>
+                        <a href="http://learn-2-code.appspot.com/additional_resources/#topic-1 " target="_blank">Andy's reference page</a>
+                    </li>
+                    <li>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">General CSS Reference page</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="standard_content panel">
+                <h2 class="standard_content_title">Tools</h2>
+                <ul>
+                    <li>
+                        <a href="http://validator.w3.org/#validate_by_input" target="_blank">Go here to validate HTML</a>
+                    </li>
+                    <li>
+                        <a href="http://jigsaw.w3.org/css-validator/#validate_by_input" target="_blank">Go here to validate CSS</a>
+                    </li>
+                    <li>
+                        <a href="http://www.cleancss.com/html-beautify/" target="_blank">Go here to beautify your HTML</a>
+                    </li>
+                    <li>
+                        <a href="http://www.cleancss.com/html-beautify/" target="_blank">Go here to beautify your CSS</a>
+                    </li>
+                </ul>
+            </div>
+       </div>     
+<!--
+    Notes from Lesson 2.1 are next.
+-->
+        <div class="main_title">  
+            <h2 id="lesson2-1">2.1 Intro to Serious Programming</h2>
+        </div>
+       <div class="main_lesson centered_row">  <!-- Section 2.1 -->       
+            <div class="standard_content panel">
+                <h2 class="standard_content_title">Programming</h2>
+                <p>A <b>computer</b> is a machine that can execute a program. With the right program, a computer can do any mechanical computation you can imagine.</p>
+                <p>A <b>program</b> describes a very precise sequence of steps. Since the computer is just a machine, the program must give the steps in a way that can be executed mechanically. That is, the program can be followed without any thought.</p>
+                <p>A <b>programming language</b> is a language designed for producing computer programs. A good programming language makes it easy for humans to read and write programs that can be executed by a computer.</p>
+                <p><b>Python</b> is a programming language. The programs that we write in the Python language will be the input to the Python interpreter, which is a program that runs on the computer. The Python interpreter reads our programs and executes them by following the rules of the Python language.</p>
+            </div>
+            <div class="standard_content panel">
+                <h2 class="standard_content_title">Why do we need programming languages?</h2>
+                <p>
+                    <em>Why do we need to invent and learn new languages, like Python, to program computers, rather than using natural languages like English or Mandarin?</em>
+                </p>
+                
+                    <ul>
+                        <li>Ambiguity - there are a lot of ways to interpret natural language.</li>
+                        <li>Verbosity - natural languages are verbose.</li>
+                    </ul>
+                
+                <p>
+                    There are many reasons why a designed language like Python is better for writing programs than a natural language like English. One problem with natural languages is that they are ambiguous. Hence, not everyone will interpret the same phrase the same way. To program computers, it is important that we know exactly what our programs mean, and that the computer will run them with the meaning we intended. Another problem with natural language is that they are very verbose. To say something with the level of precision needed for a computer to be able to follow it mechanically would require an awful lot of writing. We want our programs to be short so it is less work to write them, and so that it is easier to read and understand them.
+                </p>
+            </div>
+            <div class="standard_content panel"> <!-- start of panel -->
+                <h2 class="standard_content_title">Grammer</h2>
+                <p>Compared to a natural language, like English, programming languages like Python adhere to a strict grammatical structure. In English, even if a phrase is written or spoken incorrectly, it can still be understood with the help of context or other cues. On the other hand, in a programming language like Python, the code must match the language grammar exactly. The Python interpreter has no idea what to do with input that is not in the Python language, so it produces an error.</p>
+                <p>This <a href="https://www.youtube.com/watch?v=7GmtPqX_YVg" target="_blank">link</a> references the video lesson on programming language grammer.
+                </p>
+            </div> <!-- end of panel -->
+            <div class="standard_content panel"> <!-- start of panel -->
+                <h2 class="standard_content_title">Backus-Naur Form</h2>
+                <p>The notation we used to describe the grammar is known as Bakus-Naur Form. It was introduced in the 1950s by John Backus, the lead designer of the Fortran programming language at IBM.</p>
+ 
+                <p>The purpose of Bakus-Naur Form is to describe a programming language in a simple and concise manner.</p>
+
+                <p>This <a href="https://www.youtube.com/watch?v=B4wMpOhOako" target="_blank">link</a> references the video lesson on Backus-Naur Form.
+                </p>
+            </div>  <!-- end of panel -->
+            <div class="standard_content panel"> <!-- start of panel -->
+                <h2 class="standard_content_title">Grace Hopper (1906-1992)</h2>
+                <p><a href="http://en.wikipedia.org/wiki/Grace_Hopper" target="_blank">Grace Hopper</a> 
+                was a pioneer in computing, a Navy rear admiral and the creator of COBOL - one of the first programming
+                languages.  She built the first compiler (a program that takes as input a human readable programming
+                language and outputs a program that computers can execute).  Compilers take convert the human readable code
+                into machine executable code all at once and typically on the the executable output from the compiler is
+                loaded into memory when the program is actually run on a computer.  Python is an interpreted language meaning the Python program converts the code one step at a time as the program runs.
+                </p>
+                <p>Read more about Grace Hopper by following the link in the preceding paragraph.</p>
+            </div>  <!-- end of panel -->
+       </div> <!-- end lesson 2.1 -->    
+<!--
+    Notes from Lesson 2.2 are next.
+-->
+        <div class="main_title">  
+            <h2 id="lesson2-2">2.2 Variables and Strings</h2>
+        </div>
+       <div class="main_lesson centered_row">  <!-- Section 2.2 -->       
+            <div class="standard_content panel"> <!-- Start of Panel -->
+                <h2 class="standard_content_title">Variables</h2>
+                <p>
+                    A variable is a name that refers to a value. In Python, we can use any sequence of letters and numbers and underscores (_) when we want to make a variable name, so long as it does not start with a number.  There is a Python convention that variable names should not start with a capital letter (for ease of readability). This is not a Python grammer rule, merely a best practice.
+                </p>
+                <p>
+                    To introduce a new variable in Python we use an <b>assigment statement</b>, in the case of Python this
+                    is the "=" sign.
+                </p>
+                <p> class="centered_text">
+                    <em>name = expression</em>
+                </p>
+                <p>
+                    After executing an assignment expression the <em>name</em> on the left of the "=" sign refers to the 
+                    value on the right of the "=" sign.  Once a value has been assigned to a variable name the name can 
+                    be referred to anywhere in the code and it will mean the same thing as the value it refers to. Here is an 
+                    expression using a variable to print out weight_in_grams * 10. 
+                </p>
+                <p class="indented_text">
+                    <b>
+                        weight_in_grams = 100 <br>
+                        print weight_in_grams * 10
+                    </b>
+                </p>
+                <p>
+                    Variables can be useful to programmers in many ways, here are a few of them:
+                </p>
+                    <ul class="small_text">
+                        <li>Improving code readability by using names that make sense to people</li>
+                        <li>Giving programmers ways to store the values of important dataL</li>
+                        <li>Giving programmers a way to change the value of something (i.e <b>count = count - 1)</b></li>
+                    </ul>
+
+                <p>
+                    Here are some links to videos that explain Python variables in more detail:
+                </p>
+                <p class="centered_text"><a href="https://www.youtube.com/watch?v=EkF4R4HRsuk" target="_blank">Python Variables</a></p>
+                <p class="centered_text"><a href="https://www.youtube.com/watch?v=3l33WBJuAFI" target="_blank">Variables Can Vary</a></p>
+            </div>  <!-- end of panel -->
+            <div class="standard_content panel"> <!-- start of panel -->
+                <h2 class="standard_content_title">String Basics</h2>
+                <p>
+                    A string in Python is a sequence of characters surrounded by quotes, either single or double.  The only
+                    requirement is that the string must start and end with the same type of quote.  Double quotes are 
+                    preferred as it allows you to include quotes as characters in the string.
+                </p>
+                <p>
+                    You can use the "+" operator to concatenate strings:
+                </p>
+                <p class="centered_text">
+                    <em>&lt;string&gt; + &lt;string&gt; </em>  &nbsp; outputs the concatenation of the two strings
+                </p>
+                <p>
+                    You <b>cannot</b> use the "+" operator to combine
+                    strings and integers.
+                </p>
+                <p>
+                    You an use the "*" operator to <em>multiply</em> strings.  This essentially creates multiple copies
+                    of the same string and concatenates them.  
+                </p>
+                <p class="indented_text">
+                    <b>print '!' * 12</b><br>
+                    !!!!!!!!!!!!
+                </p>
+                <p>The above program multiplies the string by the integer to return 12 exclamation points.</p>                
+            </div>  <!-- end of panel -->
+            <div class="standard_content panel"> <!-- start of panel -->
+                <h2 class="standard_content_title">Indexing Strings</h2>
+                <p>
+                    When you want to select sub-sequences from strings it is called <b>indexing</b>. Use the square
+                    brackets <b>[]</b> to specify which part of the string you want.
+                </p>
+                <p class="indented_text">
+                    <em>&lt; string &gt; <b>[</b> &lt; expression &gt; <b>]</b></em>
+                </p>
+                <p>
+                    For example, if we have the string 'udacity' and we want to select the character in the zero position (that is, the first character), we would write:
+                </p>
+                <p class="indented_text">
+                    <b>'udacity'[0]</b>
+                </p>
+                <p>For more details on indexing strings in Python please watch this <a href="https://www.youtube.com/watch?v=qUtAg5LeQrE" target="_blank">video.</a></p>
+                <p>
+                    <b>KEY POINT: The first character of a string in Python is at position 0 - not 1!!!</b>
+                </p>
+           </div>  <!-- end of panel -->
+            <div class="standard_content panel"> <!-- start of panel -->
+                <h2 class="standard_content_title">Selecting Sub-Sequences from Strings</h2>
+                <p>You can select a sub-sequence of a string by designating a starting and ending position in the 
+                   string. 
+                </p>
+                <p class="indented_text">
+                    <em>&lt; string &gt; <b>[</b> &lt; expression &gt; <b>]</b></em> &nbsp; returns a one character string
+                </p>
+                <p class="indented_text">
+                    <em>&lt;string &gt;<b>[</b> &lt;start expression &gt;:  &lt;stop expression &gt;<b>]</b></em> &nbsp; returns a string that is a sub-sequence of the characters in the string, from the start position up
+                    to the character <em>before</em> the stop position.  If the start position is missing the sub-sequence
+                    starts from the beginning of the string; if the stop position is missing the sub-sequence goes to
+                    the end of the string.
+                </p>
+               <p>For more details on selecting sub-sequences of strings in Python please watch this 
+                <a href="https://www.youtube.com/watch?v=YY4TG43IdBg" target="_blank">video.</a></p>
+           </div>  <!-- end of panel -->
+            <div class="standard_content panel"> <!-- start of panel -->
+                <h2 class="standard_content_title">Finding Strings in Strings</h2>
+                <p>
+                    The <b>find method</b> is a built in operation, or method, provided by Python, that operates on strings.
+                    The output of find is the position of the string where the specified sub-string is found
+                </p>
+                <p class="indented_text">
+                    <em>&lt;search string &gt;<b>.find(</b> &lt;target string &gt;<b>)</b></em> 
+                </p>
+                <p>
+                    If the <em>target string</em> is not found anywhere in the <em>search string</em>, then the output
+                    will be <b>-1</b>. 
+                </p>
+                <p>For more details on finding strings in strings using Python please watch this <a href="https://www.youtube.com/watch?v=mP0AJXKoio0" target="_blank">video.</a></p>
+                <p>
+
+           </div>  <!-- end of panel -->
+            <div class="standard_content panel"> <!-- start of panel -->
+                <h2 class="standard_content_title">Finding Strings with Numbers</h2>
+                <p>
+                    In addition to passing in a target string to <b>find</b>, we can also pass in a number:
+                </p>
+                <p class="indented_text">
+                    <em>&lt;search string &gt;<b>.find(</b> &lt;target string &gt;, &lt;number &gt;<b>)</b></em> 
+                </p>
+                <p>
+                    The number input is the position in the search string where find will start looking for 
+                    the target string. So, the output is a number giving the position of the first occurrence 
+                    of the target string in the search string at or after the number input position. If there
+                    is no occurrence at or after that position, the output is -1. 
+                </p>
+                <p>For more details on finding strings in strings with numbers using Python please watch this <a href="https://www.youtube.com/watch?v=HqltUuVzB2E" target="_blank">video.</a></p>
+                <p>
+           </div>  <!-- end of panel -->
+       </div> <!-- end section 2.2 --> 
+<!--
+    Notes from Lesson 2.3 are next.
+-->
+        <div class="main_title">  
+            <h2 id="lesson2-3">2.3 Input -&gt;Function -&gt;Output </h2>
+        </div>
+        <div class="main_lesson centered_row">  <!-- Section 2.3 -->       
+            <div class="standard_content panel"> <!-- start of panel -->
+                <h2 class="standard_content_title">Functions</h2>
+                <p>
+                    A function is a block of organized, reusable code that is used to perform a single, related action. Functions provide better modularity for your application and a high degree of code reusing.  Functions may take inputs, do something with the inputs and then produce output.
+                </p>
+                <p>
+                    For example a function called <span class="code">cube</span> might take a number as input and return the cube of that number as output.
+                </p>
+            </div>  <!-- end of panel -->
+            <div class="standard_content panel"> <!-- start of panel -->
+                <h2 class="standard_content_title">Making vs. Using a Function</h2>
+                <p>
+                    Use the keyword <span class="code">def</span> followed by the function name and and function <b>parameters</b> in parentheses to define a function.  The code block within a function starts with a ":" and is indented.  Use the <span class="code">return</span> keyword to return a result from the function.
+                </p>
+                <p>
+                    The following code could be the definition of a function called 
+                    <span class="code">cube</span>: 
+                </p>
+                        <div class="code-block">
+                          def cube(x): <br>
+                          <span class="indent">answer = x * x * x</span> <br>
+                          <span class="indent">return answer</span>
+                        </div>
+                <p>
+                    To use a function type the function name and any parameters in parenthesis:
+                </p>
+                    <div class="code-block">
+                        print cube(3) <br>
+                        >>>27
+                    </div>     
+            </div>  <!-- end of panel -->
+            <div class="standard_content panel"> <!-- start of panel -->
+                <h2 class="standard_content_title">Functions help avoid Repetition</h2>
+                <p>Defining a function lets the programmer create sections of code
+                    one time that can be reused multiple times in a program.
+                </p> 
+            </div>  <!-- end of panel -->
+            <div class="standard_content panel"> <!-- start of panel -->
+                <h2 class="standard_content_title">The "return" Statement</h2>
+                <p>
+                    The <span class="code">return</span> statement in a Python function indicates what value the function will output.  Without
+                    the <span class="code">return</span> statement a Python function will return the value "None".
+                </p> 
+            </div>  <!-- end of panel -->
+       </div> <!-- end section 2.3 -->     
+<!--
+    Notes from Lesson 2.4 are next.
+-->
+        <div class="main_title">  
+            <h2 id="lesson2-4">2.4 Control Flow &amp; Loops: If and While </h2>
+        </div>
+        <div class="main_lesson centered_row">  <!-- Section 2.4 -->       
+            <div class="standard_content panel"> <!-- start of panel -->
+                <h2 class="standard_content_title">Equality Comparisons</h2>
+                <p>
+                    The "==" operator is used for equality comparisons in Python - because
+                    the "=" operator is the assignment operator.  <span class="code">a == b</span> would be used to determine if a and b are equal whereas <span class="code">a = b</span> would be used to assign the current value represented by the variable "b" to the variable "a".   
+                </p>
+                <p>
+                    "a" and "b" can also be Python expressions when used with the equality comparison operator.
+                </p>
+                <p>
+                    The equality comparison operator <span class="code">==</span> returns <b>True</b> if the expressions being compared are in fact, equal.  Otherwise <b>False</b> is returned.
+                </p>
+            </div>  <!-- end of panel -->
+            <div class="standard_content panel"> <!-- start of panel -->
+                <h2 class="standard_content_title">Comparison Operators</h2>
+                <p>
+                    Python provides several operators for making comparisons:
+                </p>    
+                    <ul>
+                        <li>&lt; less than</li>
+                        <li>&gt;  greater than</li>
+                        <li>&lt;= less than or equal to</li>
+                        <li>&gt;= greater than or equal to</li>
+                        <li>== equal to</li>
+                        <li>!= not equal to</li>
+                    </ul>
+                    
+            </div>  <!-- end of panel -->
+            <div class="standard_content panel"> <!-- start of panel -->
+                <h2 class="standard_content_title">If Statements</h2>
+                <p>
+                    If statements enable control of what code executes based on the result of a test expression.
+                </p>
+                
+                    <div class="code-block">
+                        if &lt;TestExpression&gt;: <br>
+                        <span class="indent">&lt;block&gt;</span> <br>      
+                    </div>
+                
+                <p>
+                    In the above statement the code in the <em>&lt;block&gt;</em> runs only if the value of the 
+                    test expression is <b>True</b>.  The end of an if statement is determined by indentation
+                    similar to a procedure.
+                </p>
+                <p>
+                    You can add an <b>else</b> clause to an <b>if</b> statement to provide alternate code to execute
+                    when the test expression is <b>False</b>.
+                </p>     
+                    <div class="code-block">
+                        if &lt;TestExpression&gt;: <br>
+                        <span class="indent">&lt;block&gt;</span> <br>
+                        else: <br>
+                        <span class="indent">&lt;block&gt;</span> <br>     
+                    </div>
+                    
+            </div>  <!-- end of panel -->
+            <div class="standard_content panel"> <!-- start of panel -->
+                <h2 class="standard_content_title">Or Expressions</h2>
+                <p>
+                    The <b>or</b> expression give the logical or of two operands (expressions).  If either expression
+                    evaluates to <b>True</b> the value of the <b>or</b> is <b>True</b>.  If both expressions are
+                    <b>Fales</b> the value of the <b>or</b> is <b>False</b>.
+                </p>
+                <p>
+                    <span class="code">&lt;Expression&gt; or &lt;Expression&gt;</span>
+                </p> 
+                <p>
+                    Here are a few examples:
+                </p>
+                <div class="code-block">
+                    print True or False <br>
+                    True<br>
+                    print False or True<br>
+                    True<br>
+                    print True or True<br>
+                    True<br>
+                    print False or False<br>
+                    False
+                </div>
+            </div>  <!-- end of panel -->
+            <div class="standard_content panel"> <!-- start of panel -->
+                <h2 class="standard_content_title">Composition</h2>
+                <p>
+                    The idea of composition was introduced and defined as using procedures within procedures
+                    to get to a result.   An example was to use two calls to the 'bigger' procedure
+                    to create the 'biggest' procedure
+                </p> 
+                <div class="code-block">
+                    def bigger(a,b): <br>
+                    <span class="indent">if a &gt; b:</span><br>
+                    <span class="indent2">return a</span><br>
+                    <span class="indent">else:</span><br>
+                    <span class="indent2">return b</span>
+                </div> <!-- end of code block -->
+                <br><br>
+                <div class="code-block">
+                    def biggest(a,b,c):<br>
+                    <span class="indent">return(bigger(bigger(a,b),c))</span>
+                </div>
+            </div>  <!-- end of panel -->
+            <div class="standard_content panel"> <!-- start of panel -->
+                <h2 class="standard_content_title">While Loops</h2>
+                <p>
+                    Loops are a way to execute code repeatedly and are typically bounded by one or more 
+                    test expressions.  The syntax for the <b>While</b> loop is very similar to the <b>if</b> 
+                    statement:
+                </p>
+                <div class="code-block">
+                    while &lt;TestExpression&gt;: <br>
+                    <span class="indent">&lt;block&gt;</span> <br>      
+                </div>
+                <p>
+                    A while loop executes the block any number of times - as long as the test expression 
+                    is <b>True</b>.  Recall the <b>if</b> statement executes the block only once.  As with
+                    the <b>if</b> statement the block to execute is determined by indentation.
+                </p>               
+                <p>
+                    If the test expression for a while loop is true the block executes.  Then, the test expression
+                    is evaluated again - if it is still true the block executes again.  This continues as long as
+                    the test expression evaluates to <b>True</b>.  There is no guarantee that the test expression
+                    will ever evaluate to <b>False</b>.  The loop could keep executing forever, which is known as
+                    an <b>infinite loop</b>. 
+                </p>
+                <p>
+                    Here is an example of a <b>while</b> loop:
+                </p>
+                <div class="code-block">
+                    i = 0<br>
+                    while i &lt; 10:<br>
+                    <span class="indent">print i</span><br>
+                    <span class="indent">i = i + 1</span><br>
+                </div>
+                <p>
+                    The above code will execute as long as the test expression <em>i &lt; 10</em> is <b>True</b>.
+                    In this example the code will prints i and then adds 1 to i.  The loop will repeat 10 times 
+                    printing the numbers 0 through 9.
+                </p>
+            </div>  <!-- end of panel -->
+       </div> <!-- end section 2.4 -->    
+<!--
+    Notes from Lesson 2.5 are next.
+-->
+        <div class="main_title">  
+            <h2 id="lesson2-5">2.5 Debugging</h2>
+        </div>
+        <div class="main_lesson centered_row">  <!-- Section 2.5 -->       
+            <div class="standard_content panel"> <!-- start of panel -->
+                <h2 class="standard_content_title">Some thoughts on Debugging Strategies</h2>
+                
+                    <ol>
+                        <li>Use Google to search on the error messages you receive.</li>
+                        <li>When using sample code as a model for your own code make sure the sample
+                            code does what it says it does.</li>
+                        <li>Use care when using sample code to ensure you don't inherit bugs from it.</li>
+                        <li>Use print statements to print variables (intermediate results) at various 
+                            locations in your code to make sure each part is working as designed.</li>
+                        <li>Keep and compare old versions of your code.  Save working versions so
+                            you have something to go back to if you introduce too many bugs.  Use
+                            somthing like Git to automatically version your code.</li>
+                    </ol>
+                
+                <p>
+                    Here is a link to a helpful Udacity Webcast on debugging:
+                </p>
+                <p>
+                    <a href="https://github.com/udacity/ipnd-webcasts/blob/master/Stage_2/2015-03-24-python_debugging/README.md" target="_blank">Webcast: Introduction to Python Debugging</a>
+                </p>    
+            </div>  <!-- end of panel -->
+            <div class="standard_content panel"> <!-- start of panel -->
+                <h2 class="standard_content_title">Process of Debugging</h2>
+                
+                    <ol>
+                        <li>Observe what is happening in your program by checking the state of the program
+                            in various places.</li>
+                        <li>form a hypothesis as to what your program is actually doing compared with what
+                            you want it to do.</li>
+                        <li>Make and run tests to confirm or reject your hypothesis; fix it if you now know
+                            what is causing the problem or observe more of your program states if you do not.</li>
+                    </ol>
+                 
+            </div>  <!-- end of panel -->
+       </div> <!-- end section 2.5 -->   
+<!--
+    Notes from Lesson 2.6 are next.
+-->
+        <div class="main_title">  
+            <h2 id="lesson2-6">2.6 Structured Data: Lists &amp;For Loops</h2>
+        </div>
+        <div class="main_lesson centered_row">  <!-- Section 2.6 -->       
+            <div class="standard_content panel"> <!-- start of panel -->
+                <h2 class="standard_content_title">Lists</h2>
+                <p>
+                    Strings are considered a type of structured data in that you can access individual
+                    characters and operate on sub-sequences.   Lists are similar to strings in that a
+                    list is a grouping of ‘things’ however, the ‘things’ in a list may be any Python
+                    value not just characters as with a string.   Structured data such as a Python list 
+                    has some advantages over strings in that data can easily be stored, queried, analyzed 
+                    and updated within the list structure.
+                </p>    
+            </div>  <!-- end of panel -->
+            <div class="standard_content panel"> <!-- start of panel -->
+                <h2 class="standard_content_title">Mutability</h2>
+                <p>
+                    Items in a list are also mutable - that is they can be changed.   Strings and substrings
+                    are immutable - that is they cannot be changed.  Once a string value is assigned to a 
+                    variable any future assignment statements using that variable name will only change 
+                    where the variable points - the original string values are not changed.   Additionally 
+                    you cannot use an assignment variable to update a substring of a string.
+                </p> 
+            </div>  <!-- end of panel -->
+            <div class="standard_content panel"> <!-- start of panel -->
+                <h2 class="standard_content_title">Lists vs. Strings</h2>
+                <p>
+                    <span class="code">s = 'abcd'</span><br>
+                    <span class="code">l = ['a','b','c','d']</span>
+                </p> 
+                <p>
+                    In the code above the first line initializes a variable 's' which refers to the string 'abcd'. 
+                    the second line creates a list 'l' containing 4 elements.                
+                </p>
+                <p>
+                    <span class="code">t = s[0]</span><br>
+                    <span class="code">m = l[0]</span>                    
+                </p>
+                <p>
+                    The first statement above assigns the value 'a' to the variable 't'.  't' points to a location
+                    in memory containing 'a' - not the same string as 's'.  The second statement assigns the value a to
+                    the variable 'l' - similar to the first statement.
+                </p>
+                <p>
+                    <span class="code">s[0] = 'x'</span><br>
+                    <span class="code">l[0] = 'q'</span>                    
+                </p> 
+                <p>
+                    The first statement above results in an error - you cannot assign a value to a substring in Python,
+                    that is because <b>strings are immutable</b>. The second statement updates the original list and 
+                    changes the first item in the list to 'q' so now the list 'l' is ['q','b','c','d'].  This 
+                    demonstrates the <em>Mutability</em> of lists, i.e. they can be changed.
+                </p>               
+            </div>  <!-- end of panel -->
+            <div class="standard_content panel"> <!-- start of panel -->
+                <h2 class="standard_content_title">Nested Lists</h2>
+                <p>
+                    Elements in a list can be of differing types - you can mix and match strings, numbers and even 
+                    other lists! For example:
+                </p> 
+                <div class="code-block">
+                    months = [["Jan", 31],["Feb", 28],["Mar", 31]]
+                </div>
+                <p>
+                    Creates a list 'months' that contains three elements, each of which is a 2 element list.
+                </p>
+            </div>  <!-- end of panel -->
+            <div class="standard_content panel"> <!-- start of panel -->
+                <h2 class="standard_content_title">Aliasing</h2>
+                <p>
+                    Consider the following code:
+                </p>
+                <div class="code-block">
+                    p = ['H','e','l','l','o']<br>
+                    p[0] = 'Y'<br>
+                    q = p
+                </div> 
+                <p>
+                    After the last assignment <span class="code">q = p</span> p and q refer to the same
+                    list: <em>['Y','e','l','l','o']</em>.  So, anything done to mutate that list changes 
+                    the value that both variables point to.  When multiple variables refer to the same object
+                    it is called <b>aliasing</b>. 
+                </p>
+            </div>  <!-- end of panel -->
+            <div class="standard_content panel"> <!-- start of panel -->
+                <h2 class="standard_content_title">List Operations</h2>
+                <p>
+                    In this lesson we learned some of the built in operations on lists in Python: append, '+', and len.
+                </p> 
+                <p>
+                    <b>Append.</b> Append adds a new element to the end of a list.  The append method mutates the list that 
+                    it is invoked upon (it does not create a new list). Syntax:
+                </p>
+                <span class="code">&lt;list&gt;.append(&lt;element;&gt;)</span>
+                <p>
+                    <b>Concatenation.</b> The <b>+</b> operator when used with lists concatenates the lists creating 
+                    a new list.  It does not mutate the original lists.
+                </p>
+                <span class="code">p = [0, 1]</span><br>
+                <span class="code">q = [2, 3]</span><br>
+                <span class="code">pq = p + q</span><br>
+                <p>
+                    pq now refers to a new list: [0 ,1 ,2 ,3].
+                </p>
+                <p> 
+                    <b>Length.</b> The <b>len</b> operator is used to find out the length of an object.  <b>len</b> works
+                    with any object that is a collection of things (including strings). The output of <b>len</b> is the 
+                    number of elements in its input. Syntax:
+                </p>
+                <span class="code">len(&lt;list&gt;) -&gt; &lt;number&gt;</span>       
+            </div>  <!-- end of panel -->
+            <div class="standard_content panel"> <!-- start of panel -->
+                <h2 class="standard_content_title">Loops on Lists</h2>
+                <p>
+                    We can use <b>while</b>loops to loop through lists by setting an index counter variable and
+                    incrementing it to step through the list.  However, Python provides an easier way to do this:
+                    the <b>for</b> loop.  The syntax looks like this:
+                </p> 
+                <div class="code-block">
+                    for &lt;name&gt; in &lt;list&gt;:<br>
+                    <span class="indent">&lt;block&gt;</span>
+                </div>
+                <p>
+                    The loop goes through each element in the list, assigning it to the <b>&lt;name&gt;</b> and
+                    executing the <b>&lt;block&gt;</b>.  For example, to print all elements in a list you could
+                    define the following procedure:
+                </p>
+                <div class="code-block">
+                    def print_all_elements(p):<br>
+                    <span class="indent">for e in p:</span><br>
+                    <span class="indent2">print e</span>
+                </div>
+                <p>
+                    A few more operations you can do with lists include:
+                </p>
+                <p>
+                    <span class="code">&lt;list&gt;.index(&lt;value&gt;)</span> returns the first instance of &lt;value&gt;
+                    in the list. Returns and error if &lt;value&gt; is not in the list.
+                </p>
+                <p>
+                    <span class="code">&lt;value&gt; in &lt;list&gt;)</span> returns <b>True</b> if &lt;value&gt; is in the
+                    list, <b>False</b> if it is not.
+                </p>
+                <p>
+                    <span class="code">&lt;value&gt; not in &lt;list&gt;)</span> returns <b>True</b> if &lt;value&gt; is not in the
+                    list, <b>False</b> if it is.
+                </p>
+                <p>
+                    For even more information on Lists and list operations here are a couple of great reference links:
+                </p>
+                <p>
+                    <a href="http://www.tutorialspoint.com/python/python_lists.htm" target="_blank">Basic Python Tutorial on Lists</a>
+                </p> 
+                <p>
+                    <a href="https://docs.python.org/2/tutorial/datastructures.html" target="_blank">Data Structures Chapter from "The Python Tutorial"</a>
+                </p> 
+            </div>  <!-- end of panel -->
+       </div> <!-- end section 2.6 -->
+<!--
+    Notes from Lesson 2.7 are next.
+-->
+        <div class="main_title">  
+            <h2 id="lesson2-7">2.7 How to Solve Problems</h2>
+        </div>
+        <div class="main_lesson centered_row">  <!-- Section 2.7 -->       
+            <div class="standard_content panel"> <!-- start of panel -->
+                <h2 class="standard_content_title">Rules for Solving Problems</h2>
+                
+                    <ol start="0">
+                        <li><em>Don't Panic!!</em></li>
+                        <li>What are the inputs?</li>
+                        <li>What are the output?</li>
+                        <li>Work through some examples by hand.</li>
+                        <li>Try to develop a simple mechanical solution.</li>
+                        <li>Develop code incrementally and test as you go.</li>
+                    </ol>
+                
+                <p>
+                    It's just that easy!
+                </p>    
+            </div>  <!-- end of panel -->
+            <div class="standard_content panel"> <!-- start of panel -->
+                <h2 class="standard_content_title">A bit more about the Rules...</h2>
+                <p>
+                    <b>Don't Panic.</b> Seriously - relax. Don't rush into writing code, or even designing algorithms.  Consider 
+                    the problem statement holistically and think about how you can break the problem down into more 
+                    manageable pieces.
+                </p> 
+                <p>
+                    <b>Consider the Inputs.</b> How are the inputs represented?  What are their data types? Where you given any 
+                    specifications to follow?  etc...
+                </p>
+                <p>
+                    <b>Consider the Outputs.</b> How should you produce the outputs?  Print them? Use the <b>return</b> statement 
+                    to return them?  What data types should you use?
+                </p>
+                <p>
+                    <b>Work examples by hand.</b> Look at sample expected inputs and work through by hand what the expected
+                    outputs would be for given inputs.  No coding yet at this point.  
+                </p>
+                <p>
+                    <b>Develop a Mechanical Solution</b> Try working through a few cases as a human would solve the problem, 
+                    for example.  In the daysBetweenDates problem from the class - it is reasonable to think a human might
+                    resort to using a physical calendar to work through the problem by hand.  Use whatever physical tools you 
+                    might use based on the specific problem to work through various scenarios of inputs and expected outputs. 
+                </p>
+                <p>
+                    You can progress through this process by starting to create algorighms represented by pseudocode or rough 
+                    Python code.  Consider the mechanical steps you worked out previously and work on algorithms to solve each 
+                    step of the mechanical process.  Consider whether a simpler approach might be better for a computer than 
+                    perhaps the approach a human would take.   
+                </p>
+                <p>
+                    <b>Develop code Incrementally</b> When you have a workable algorithm and have thought about how to adapt it
+                    for a computer.  Write code in small bits that are easily testable separately.  Building incrementally towards
+                    solving the problem.
+                </p>
+            </div>  <!-- end of panel -->
+       </div> <!-- end section 2.7 --> 
+<!-- 
+    page footer 
+-->                     
+    </div>  <!-- end of the main box for the page -->
+</body>
+
+</html>
